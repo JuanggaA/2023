@@ -1,4 +1,13 @@
 <?php
+session_start();
+
+// Cek apakah user sudah login atau belum
+if ( !isset($_SESSION['username'])) {
+  // Jika belum, redirect ke halaman login
+  header("Location: home.php");
+  exit();
+}
+
 include('function/koneksi.php');
 $sql = "SELECT * FROM	tb_menu";
 $result = $conn->query($sql);

@@ -1,4 +1,13 @@
 <?php
+session_start();
+
+// Cek apakah user sudah login atau belum
+if ( !isset($_SESSION['username'])) {
+  // Jika belum, redirect ke halaman login
+  header("Location: home.php");
+  exit();
+}
+
 include('function/koneksi.php');
 
 $idMenu = ''; // inisialisasi variabel $idMenu
@@ -65,7 +74,7 @@ if (isset($_POST['ubah'])) {
         </h4>
       </div>
       <div class="card-body">
-        <form action="function/ubah.php" method="post" autocomplete="off">
+        <form action="function/ubah.php?idMenu=<?= $idMenu; ?>" method="post" autocomplete="off">
           <input type="hidden" name="idMenu" value="<?= $data['idMenu']; ?>">
           <div class="row mb-3">
             <label for="namaMenu" class="col-sm-2 col-form-label">Nama Menu</label>

@@ -1,6 +1,14 @@
 <?php 
-include('function/koneksi.php');
+session_start();
 
+// Cek apakah user sudah login atau belum
+if ( !isset($_SESSION['username'])) {
+  // Jika belum, redirect ke halaman login
+  header("Location: home.php");
+  exit();
+}
+
+include('function/koneksi.php');
 /* 
 
 Fungsi isset() pada PHP digunakan untuk memeriksa apakah sebuah variabel telah diatur nilainya atau belum. Fungsi ini mengembalikan nilai true jika variabel telah diatur nilainya dan mengembalikan nilai false jika variabel belum diatur nilainya atau tidak didefinisikan.
@@ -68,6 +76,7 @@ if (isset($_POST['submit'])) {
             </li>
           </ul>
         </div>
+        <a href="logout.php" class="btn btn-primary">Log Out</a>
       </div>
     </nav>
   </div>
@@ -75,11 +84,11 @@ if (isset($_POST['submit'])) {
   <div class="container mt-5">
     <div class="card">
       <div class="card-header">
-        <a href="tambah.php" class="btn btn-outline-success float-end">Tambah</a>
+        <a href="tambah.php" class="btn btn-success float-end">Tambah</a>
         <form action="" method="post">
           <div class="d-flex col-4 float-end me-3">
             <input class="form-control me-2" size="30" type="text" name="keyword" autocomplete="off" placeholder="input keyword here.."> 
-            <button type="submit" name="submit" class="btn btn-outline-success">search</button>
+            <button type="submit" name="submit" class="btn btn-success">search</button>
           </div>
         </form>
         <h4>
@@ -107,10 +116,10 @@ if (isset($_POST['submit'])) {
                   <td><?= $row['jenisMenu']; ?></td>
                   <td>Rp. <?= $row['harga']; ?></td>
                   <td>
-                    <button type="submit" class="btn btn-outline-danger">
+                    <button type="submit" class="btn btn-danger">
                       <a class="nav-link" href="hapus.php?idMenu=<?= $row['idMenu']; ?>">hapus</a>
                     </button>
-                    <button type="submit" class="btn btn-outline-warning">
+                    <button type="submit" class="btn btn-warning">
                       <a class="nav-link" href="ubah.php?idMenu=<?= $row['idMenu']; ?>">Ubah</a>
                     </button>
                   </td>
