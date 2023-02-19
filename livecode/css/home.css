@@ -1,0 +1,41 @@
+/* Style untuk membuat section full 1 layar desktop */
+body,
+    html {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .full-screen {
+      height: 100%;
+    }
+
+    .row {
+      height: 100%;
+    }
+
+    .col-left {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #17a2b8;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    .col-right {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      margin-right: 1rem;
+    }

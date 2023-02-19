@@ -19,49 +19,7 @@ if (isset($_SESSION['username'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link rel="stylesheet" href="dist/css/bootstrap.css">
-  <style>
-    /* Style untuk membuat section full 1 layar desktop */
-    body,
-    html {
-      height: 100%;
-      overflow: hidden;
-    }
-
-    .full-screen {
-      height: 100%;
-    }
-
-    .row {
-      height: 100%;
-    }
-
-    .col-left {
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #17a2b8;
-      color: #fff;
-      padding: 2rem;
-    }
-
-    .col-right {
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 2rem;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 2rem;
-    }
-
-    .btn {
-      margin-right: 1rem;
-    }
-  </style>
+  <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
@@ -81,12 +39,11 @@ if (isset($_SESSION['username'])) {
         <div class="col-md-6 col-left">
           <div>
             <h1>Welcome To<br>Nastim Admin</h1>
-            <a class="btn btn-light" href="login.php">Login</a>
-            <a class="btn btn-light" href="register.php">Register</a>
+            <a class="btn btn-light rounded-5 px-4" href="login.php">Login</a>
           </div>
         </div>
         <div class="col-md-6 col-right">
-          <img src="img/online-assistant-user-help-frequently-asked-questions-call-center-worker-cartoon-character-woman-working-hotline_335657-2336.png" alt="Picture Admin Vector" width="250">
+          <img src="img/organic-flat-nasi-lemak-illustrated_23-2148945741.png" width="450">
         </div>
       </div>
     </div>

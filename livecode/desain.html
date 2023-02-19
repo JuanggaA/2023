@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="dist/css/bootstrap.css">
+  <style>
+    html, body {
+      background-color: #0061c9;
+    }
+
+    .login-container {
+      display: flex;
+      height: 100% !important;
+      justify-content: center;
+      margin: 4rem auto;
+    }
+
+    .left-side {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left-side {
+      background: url('gambar.png') no-repeat center center/cover;
+      flex: 1;
+    }
+
+    .right-side {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form {
+      background: #fff;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      background-color: #0069d9;
+      color: #fff;
+    }
+
+    form h2 {
+      margin-bottom: 1.5rem;
+      font-weight: bold;
+      color: #4a4a4a;
+    }
+
+    form input {
+      margin-bottom: 1rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid #d1d1d1;
+      border-radius: 0.5rem;
+      width: 100%;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    form button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      background-color: #eaeaea;
+      color: #4a4a4a;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #dddddd;
+      color: #4a4a4a;
+    }
+
+    form .separator {
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      color: #4a4a4a;
+    }
+
+    form .separator-akhir {
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      color: #4a4a4a;
+    }
+
+    form .separator::before,
+    form .separator::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #d1d1d1;
+    }
+
+    form .separator::before {
+      margin-right: 1rem;
+    }
+
+    form .separator::after {
+      margin-left: 1rem;
+    }
+
+    form .separator-akhir::before,
+    form .separator-akhir::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #d1d1d1;
+    }
+
+    .btn-google,
+    .btn-facebook {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      text-align: center;
+      display: block;
+    }
+
+    .btn-google,
+    .btn-facebook {
+      background-color: #eaeaea;
+      color: #fff;
+    }
+
+    .icon-google,
+    .icon-facebook {
+      width: 2em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="login-container">
+      <div class="card border border-1" style="width: 50rem;">
+        <div class="row">
+          <div class="left-side">
+            <div class="logo">
+              <a href="#">
+                <img src="img/mobile-login-concept-illustration_114360-83.png" alt="Google Logo" width="250">
+              </a>
+            </div>
+          </div>
+          <div class="right-side">
+            <form action="" method="post" autocomplete="off">
+              <h2 class="text-light">Login</h2>
+              <input type="text" id="username" name="username" placeholder="Enter username">
+              <input type="password" id="password" name="password" placeholder="Password">
+              <div class="checkbox text-start">
+                <input class="form-check-input" type="checkbox" id="gridCheck" name="checkbox">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+              <div class="login text-center">
+                <button type="submit" name="login">Login</button>
+              </div>
+              <div class="separator text-light">or login with</div>
+              <div class="button d-flex justify-content-evenly mb-4">
+                <a class="btn-google"><img class="icon-google" src="img/google (1).png" alt="Google Logo"></a>
+                <a class="btn-facebook"><img class="icon-facebook" src="img/facebook (1).png" alt="Facebook Logo"></a>
+              </div>
+              <div class="separator-akhir text-light"></div>
+              <div class="forgot-password"><a class="text-light text-decoration-none small" href="#">Forgot Password?</a></div>
+              <div class="forgot-password"><a class="text-light text-decoration-none small" href="register.php">Create Account!</a></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
