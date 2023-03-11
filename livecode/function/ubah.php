@@ -1,7 +1,7 @@
 <?php 
 include ('koneksi.php');
 
-$idMenu = $_GET['idMenu'];
+$idMenu = $_POST['idMenu'];
 $namaMenu = $_POST['namaMenu'];
 $jenisMenu = $_POST['jenisMenu'];
 $harga = $_POST['harga'];

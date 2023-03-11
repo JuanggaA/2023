@@ -20,6 +20,11 @@ if (isset($_SESSION['username'])) {
   <title>Home</title>
   <link rel="stylesheet" href="dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/home.css">
+  <style>
+    body {
+      font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+  </style>
 </head>
 
 <body>
@@ -38,7 +43,7 @@ if (isset($_SESSION['username'])) {
       <div class="row h-100">
         <div class="col-md-6 col-left">
           <div>
-            <h1>Welcome To<br>Nastim Admin</h1>
+            <h1>Welcome To NasTim</h1>
             <a class="btn btn-light rounded-5 px-4" href="login.php">Login</a>
           </div>
         </div>

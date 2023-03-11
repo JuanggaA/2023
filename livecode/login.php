@@ -56,6 +56,133 @@ if (isset($_POST['login'])) {
   <title>Document</title>
   <link rel="stylesheet" href="dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/login.css">
+  <style>
+    
+html,
+    body {
+      background-color: #0061c9;
+    }
+
+    body {
+      font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+    .login-container {
+      display: flex;
+      justify-content: center;
+      margin: 4rem auto;
+    }
+
+    .left-side {
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('gambar.png') no-repeat center center/cover;
+      flex: 1;
+    }
+
+    .right-side {
+      height: 80vh;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form {
+      background: #fff;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      height: 80vh;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      background-color: #0069d9;
+      color: #fff;
+    }
+
+    form h2 {
+      margin-bottom: 1.5rem;
+      font-weight: bold;
+      color: #4a4a4a;
+    }
+
+    form button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      background-color: #eaeaea;
+      color: #4a4a4a;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #dddddd;
+      color: #4a4a4a;
+    }
+
+    form .separator {
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      color: #4a4a4a;
+    }
+
+    form .separator-akhir {
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      color: #4a4a4a;
+    }
+
+    form .separator::before,
+    form .separator::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #d1d1d1;
+    }
+
+    form .separator::before {
+      margin-right: 1rem;
+    }
+
+    form .separator::after {
+      margin-left: 1rem;
+    }
+
+    form .separator-akhir::before,
+    form .separator-akhir::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #d1d1d1;
+    }
+
+    .btn-google,
+    .btn-facebook {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      text-align: center;
+      display: block;
+    }
+
+    .btn-google,
+    .btn-facebook {
+      background-color: #eaeaea;
+      color: #fff;
+    }
+
+    .icon-google,
+    .icon-facebook {
+      width: 2em;
+    }
+  </style>
 </head>
 
 <body>
